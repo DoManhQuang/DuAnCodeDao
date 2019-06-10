@@ -21,13 +21,13 @@ namespace QuanLyNhaKho
         {
             try
             {
-                if (txtID.Text.Trim() == "" && txtTaikhoan.Text.Trim() == "" && txtMatkhau2.Text.Trim() == "" && txtMatkhau1.Text.Trim() == "")
+                if (txtID.Text.Trim() == "" || txtTaikhoan.Text.Trim() == "" || txtMatkhau2.Text.Trim() == "" || txtMatkhau1.Text.Trim() == "")
                 {
                     throw new IDandPassisNull();
                 }
                 else if (!String.Equals(txtMatkhau2.Text.Trim(), txtMatkhau1.Text.Trim()))
                 {
-
+                    throw new PasswordAgain();
                 }
                 else
                 {
@@ -39,10 +39,22 @@ namespace QuanLyNhaKho
             {
                 MessageBox.Show("Không được để trống thông tin.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            catch (PasswordAgain)
+            {
+                MessageBox.Show("Mật khẩu phải trùng nhau.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             catch (Exception)
             {
                 MessageBox.Show("Cập nhập thất bại.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnQuaylai_Click(object sender, EventArgs e)
+        {
+            DangNhap dangNhap = new DangNhap();
+            this.Hide();
+            dangNhap.ShowDialog();
+            this.Close();
         }
     }
 }

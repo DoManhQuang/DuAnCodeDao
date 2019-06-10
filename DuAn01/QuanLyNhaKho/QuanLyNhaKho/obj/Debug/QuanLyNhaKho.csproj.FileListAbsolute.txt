@@ -11,3 +11,18 @@ G:\Project Winforms\Code Dao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNh
 G:\Project Winforms\Code Dao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.csproj.CoreCompileInputs.cache
 G:\Project Winforms\Code Dao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.exe
 G:\Project Winforms\Code Dao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.pdb
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\bin\Debug\QuanLyNhaKho.exe.config
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\bin\Debug\QuanLyNhaKho.exe
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\bin\Debug\QuanLyNhaKho.pdb
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.csprojAssemblyReference.cache
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.BanHang.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.DangNhap.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.HangHoa.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.Properties.Resources.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.QuanLyNhanVien.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.QuenMatKhau.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.csproj.GenerateResource.cache
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.csproj.CoreCompileInputs.cache
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.exe
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.pdb
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.FormQuanLyKho.resources

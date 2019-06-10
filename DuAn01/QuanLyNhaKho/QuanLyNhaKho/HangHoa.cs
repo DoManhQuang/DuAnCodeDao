@@ -46,5 +46,13 @@ namespace QuanLyNhaKho
         {
             dgvHanghoa.DataSource = layer02.HangHoaSapHetHan();
         }
+
+        private void btnQuaylai_Click(object sender, EventArgs e)
+        {
+            FormQuanLyKho quanLyKho = new FormQuanLyKho();
+            this.Hide();
+            quanLyKho.ShowDialog();
+            this.Close();
+        }
     }
 }

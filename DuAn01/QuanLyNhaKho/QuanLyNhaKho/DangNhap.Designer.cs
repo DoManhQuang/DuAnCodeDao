@@ -62,6 +62,7 @@
             this.btnQuenMK.TabIndex = 4;
             this.btnQuenMK.Text = "Quên Mật Khẩu";
             this.btnQuenMK.UseVisualStyleBackColor = true;
+            this.btnQuenMK.Click += new System.EventHandler(this.btnQuenMK_Click);
             // 
             // txtPassword
             // 

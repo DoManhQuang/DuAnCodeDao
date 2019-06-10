@@ -21,7 +21,7 @@ namespace QuanLyNhaKho
         {
             try
             {
-                if (txtID.Text.Trim() == "" && txtPassword.Text.Trim() == "")
+                if (txtID.Text.Trim() == "" || txtPassword.Text.Trim() == "")
                 {
                     throw new IDandPassisNull();
                 }
@@ -37,11 +37,15 @@ namespace QuanLyNhaKho
                     }
                     else if (chucnang == 2)
                     {
-
+                        // Kho hàng
+                        FormQuanLyKho quanLyKho = new FormQuanLyKho();
+                        this.Hide();
+                        quanLyKho.ShowDialog();
+                        this.Close();
                     }
                     else if (chucnang == 3)
                     {
-
+                        // Bán hàng
                     }
                     else
                     {
@@ -70,6 +74,14 @@ namespace QuanLyNhaKho
         {
             txtPassword.Clear();
             txtID.Clear();
+        }
+
+        private void btnQuenMK_Click(object sender, EventArgs e)
+        {
+            QuenMatKhau quenMatKhau = new QuenMatKhau();
+            this.Hide();
+            quenMatKhau.ShowDialog();
+            this.Close();
         }
     }
 }

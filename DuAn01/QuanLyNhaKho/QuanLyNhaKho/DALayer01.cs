@@ -9,7 +9,7 @@ namespace QuanLyNhaKho
 {
     class DALayer01
     {
-        private String connectionString = @"Data Source=DESKTOP-DI6CE7U\SQLEXPRESS;Initial Catalog=QLKhohang;Integrated Security=True";
+        private String connectionString = @"Data Source=DESKTOP-DI6CE7U\SQLEXPRESS;Initial Catalog=QLkhohang;Integrated Security=True";
         public SqlConnection GetSqlConnection()
         {
             return new SqlConnection(connectionString);

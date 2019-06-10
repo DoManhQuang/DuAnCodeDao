@@ -125,6 +125,7 @@
             this.btnQuaylai.TabIndex = 2;
             this.btnQuaylai.Text = "Quay Lại";
             this.btnQuaylai.UseVisualStyleBackColor = true;
+            this.btnQuaylai.Click += new System.EventHandler(this.btnQuaylai_Click);
             // 
             // label5
             // 

@@ -106,7 +106,7 @@ namespace QuanLyNhaKho
         }
         public void CapNhapTaiKhoan(string MaNV, string taikhoan, string matkhau)
         {
-            string cmdText = "Update Nhanvien set Taikhoan = '" + taikhoan + "' ,Matkhau = '" + matkhau + "' , where MaNV = '" + MaNV + "'";
+            string cmdText = "Update Nhanvien set Taikhoan = '" + taikhoan + "' ,Matkhau = '" + matkhau + "' where MaNV = '" + MaNV + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
         //public int DemMaNV()

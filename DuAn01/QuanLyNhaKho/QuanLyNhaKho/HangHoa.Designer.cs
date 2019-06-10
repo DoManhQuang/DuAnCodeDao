@@ -31,15 +31,6 @@
             this.txtTenhang = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvHanghoa = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbDanhmuc = new System.Windows.Forms.ComboBox();
-            this.cmbNhakho = new System.Windows.Forms.ComboBox();
-            this.btnTimkiem = new System.Windows.Forms.Button();
-            this.btnQuaylai = new System.Windows.Forms.Button();
-            this.btnSapHetHan = new System.Windows.Forms.Button();
-            this.btnHetHan = new System.Windows.Forms.Button();
-            this.btnTonkho = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +40,15 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbDanhmuc = new System.Windows.Forms.ComboBox();
+            this.cmbNhakho = new System.Windows.Forms.ComboBox();
+            this.btnTimkiem = new System.Windows.Forms.Button();
+            this.btnQuaylai = new System.Windows.Forms.Button();
+            this.btnSapHetHan = new System.Windows.Forms.Button();
+            this.btnHetHan = new System.Windows.Forms.Button();
+            this.btnTonkho = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHanghoa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,89 +88,6 @@
             this.dgvHanghoa.RowTemplate.Height = 24;
             this.dgvHanghoa.Size = new System.Drawing.Size(1109, 312);
             this.dgvHanghoa.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(541, 38);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 17);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Nhà kho";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(541, 78);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 17);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Danh mục";
-            // 
-            // cmbDanhmuc
-            // 
-            this.cmbDanhmuc.FormattingEnabled = true;
-            this.cmbDanhmuc.Location = new System.Drawing.Point(679, 75);
-            this.cmbDanhmuc.Name = "cmbDanhmuc";
-            this.cmbDanhmuc.Size = new System.Drawing.Size(247, 24);
-            this.cmbDanhmuc.TabIndex = 5;
-            // 
-            // cmbNhakho
-            // 
-            this.cmbNhakho.FormattingEnabled = true;
-            this.cmbNhakho.Location = new System.Drawing.Point(679, 31);
-            this.cmbNhakho.Name = "cmbNhakho";
-            this.cmbNhakho.Size = new System.Drawing.Size(247, 24);
-            this.cmbNhakho.TabIndex = 5;
-            // 
-            // btnTimkiem
-            // 
-            this.btnTimkiem.Location = new System.Drawing.Point(768, 140);
-            this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(149, 37);
-            this.btnTimkiem.TabIndex = 0;
-            this.btnTimkiem.Text = "Tìm Kiếm";
-            this.btnTimkiem.UseVisualStyleBackColor = true;
-            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
-            // 
-            // btnQuaylai
-            // 
-            this.btnQuaylai.Location = new System.Drawing.Point(152, 18);
-            this.btnQuaylai.Name = "btnQuaylai";
-            this.btnQuaylai.Size = new System.Drawing.Size(138, 37);
-            this.btnQuaylai.TabIndex = 0;
-            this.btnQuaylai.Text = "Quay lại";
-            this.btnQuaylai.UseVisualStyleBackColor = true;
-            // 
-            // btnSapHetHan
-            // 
-            this.btnSapHetHan.Location = new System.Drawing.Point(334, 140);
-            this.btnSapHetHan.Name = "btnSapHetHan";
-            this.btnSapHetHan.Size = new System.Drawing.Size(165, 37);
-            this.btnSapHetHan.TabIndex = 0;
-            this.btnSapHetHan.Text = "Hàng Sắp Hết Hạn";
-            this.btnSapHetHan.UseVisualStyleBackColor = true;
-            this.btnSapHetHan.Click += new System.EventHandler(this.btnSapHetHan_Click);
-            // 
-            // btnHetHan
-            // 
-            this.btnHetHan.Location = new System.Drawing.Point(152, 140);
-            this.btnHetHan.Name = "btnHetHan";
-            this.btnHetHan.Size = new System.Drawing.Size(134, 37);
-            this.btnHetHan.TabIndex = 0;
-            this.btnHetHan.Text = "Hàng Hết Hạn";
-            this.btnHetHan.UseVisualStyleBackColor = true;
-            this.btnHetHan.Click += new System.EventHandler(this.btnHetHan_Click);
-            // 
-            // btnTonkho
-            // 
-            this.btnTonkho.Location = new System.Drawing.Point(558, 140);
-            this.btnTonkho.Name = "btnTonkho";
-            this.btnTonkho.Size = new System.Drawing.Size(151, 37);
-            this.btnTonkho.TabIndex = 0;
-            this.btnTonkho.Text = "Tồn Kho";
-            this.btnTonkho.UseVisualStyleBackColor = true;
-            this.btnTonkho.Click += new System.EventHandler(this.btnTonkho_Click);
             // 
             // Column1
             // 
@@ -225,6 +142,90 @@
             this.Column8.DataPropertyName = "Mota";
             this.Column8.HeaderText = "Mô tả";
             this.Column8.Name = "Column8";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(541, 38);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 17);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Nhà kho";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(541, 78);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 17);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Danh mục";
+            // 
+            // cmbDanhmuc
+            // 
+            this.cmbDanhmuc.FormattingEnabled = true;
+            this.cmbDanhmuc.Location = new System.Drawing.Point(679, 75);
+            this.cmbDanhmuc.Name = "cmbDanhmuc";
+            this.cmbDanhmuc.Size = new System.Drawing.Size(247, 24);
+            this.cmbDanhmuc.TabIndex = 5;
+            // 
+            // cmbNhakho
+            // 
+            this.cmbNhakho.FormattingEnabled = true;
+            this.cmbNhakho.Location = new System.Drawing.Point(679, 31);
+            this.cmbNhakho.Name = "cmbNhakho";
+            this.cmbNhakho.Size = new System.Drawing.Size(247, 24);
+            this.cmbNhakho.TabIndex = 5;
+            // 
+            // btnTimkiem
+            // 
+            this.btnTimkiem.Location = new System.Drawing.Point(768, 140);
+            this.btnTimkiem.Name = "btnTimkiem";
+            this.btnTimkiem.Size = new System.Drawing.Size(149, 37);
+            this.btnTimkiem.TabIndex = 0;
+            this.btnTimkiem.Text = "Tìm Kiếm";
+            this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
+            // 
+            // btnQuaylai
+            // 
+            this.btnQuaylai.Location = new System.Drawing.Point(152, 18);
+            this.btnQuaylai.Name = "btnQuaylai";
+            this.btnQuaylai.Size = new System.Drawing.Size(138, 37);
+            this.btnQuaylai.TabIndex = 0;
+            this.btnQuaylai.Text = "Quay lại";
+            this.btnQuaylai.UseVisualStyleBackColor = true;
+            this.btnQuaylai.Click += new System.EventHandler(this.btnQuaylai_Click);
+            // 
+            // btnSapHetHan
+            // 
+            this.btnSapHetHan.Location = new System.Drawing.Point(334, 140);
+            this.btnSapHetHan.Name = "btnSapHetHan";
+            this.btnSapHetHan.Size = new System.Drawing.Size(165, 37);
+            this.btnSapHetHan.TabIndex = 0;
+            this.btnSapHetHan.Text = "Hàng Sắp Hết Hạn";
+            this.btnSapHetHan.UseVisualStyleBackColor = true;
+            this.btnSapHetHan.Click += new System.EventHandler(this.btnSapHetHan_Click);
+            // 
+            // btnHetHan
+            // 
+            this.btnHetHan.Location = new System.Drawing.Point(152, 140);
+            this.btnHetHan.Name = "btnHetHan";
+            this.btnHetHan.Size = new System.Drawing.Size(134, 37);
+            this.btnHetHan.TabIndex = 0;
+            this.btnHetHan.Text = "Hàng Hết Hạn";
+            this.btnHetHan.UseVisualStyleBackColor = true;
+            this.btnHetHan.Click += new System.EventHandler(this.btnHetHan_Click);
+            // 
+            // btnTonkho
+            // 
+            this.btnTonkho.Location = new System.Drawing.Point(558, 140);
+            this.btnTonkho.Name = "btnTonkho";
+            this.btnTonkho.Size = new System.Drawing.Size(151, 37);
+            this.btnTonkho.TabIndex = 0;
+            this.btnTonkho.Text = "Tồn Kho";
+            this.btnTonkho.UseVisualStyleBackColor = true;
+            this.btnTonkho.Click += new System.EventHandler(this.btnTonkho_Click);
             // 
             // HangHoa
             // 
