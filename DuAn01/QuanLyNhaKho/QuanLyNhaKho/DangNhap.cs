@@ -27,9 +27,15 @@ namespace QuanLyNhaKho
                 }
                 else if (layer02.DangNhap(txtID.Text.Trim(), txtPassword.Text.Trim()))
                 {
+                    string MaNV = null;
                     int chucnang = layer02.ChucNangNguoiDung(txtID.Text.Trim(), txtPassword.Text.Trim());
+                    if(layer02.GetMaNV(txtID.Text.Trim(), txtPassword.Text.Trim()) != null)
+                    {
+                        MaNV = layer02.GetMaNV(txtID.Text.Trim(), txtPassword.Text.Trim());
+                    }
                     if (chucnang == 1)
                     {
+                        // Quản lý
                         QuanLyNhanVien formQuanLy = new QuanLyNhanVien();
                         this.Hide();
                         formQuanLy.ShowDialog();

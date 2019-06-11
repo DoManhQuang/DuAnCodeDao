@@ -30,6 +30,17 @@ namespace QuanLyNhaKho
             CloseConnection();
             return false;
         }
+        public string GetMaNV(string taikhoan, string matkhau)
+        {
+            string cmdText = "select MaNV from Nhanvien where Taikhoan = '" + taikhoan + "' and Matkhau = '" + matkhau + "'";
+            SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
+            if (dataReader.Read())
+            {
+                CloseConnection();
+                return dataReader[0].ToString();
+            }
+            return null;
+        }
         public int ChucNangNguoiDung(string taikhoan, string matkhau)
         {
             string cmdText = "select Phanquyen from Nhanvien where Taikhoan = '" + taikhoan + "' and Matkhau = '" + matkhau + "'";
@@ -136,5 +147,120 @@ namespace QuanLyNhaKho
         //    }
         //    return null;
         //}
+
+        // Khách Hàng
+        public void SuaBangKhachHang(string makh, string tenkh, string diachi, string sdt, string email)
+        {
+            string cmdText = "update Khachhang set TenKH = '" + tenkh + "', Diachi = '" + diachi
+                + "', Sdt = '" + sdt + "', Email = '" + email + "' where MaKH = '" + makh + "'";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public void XoaBangKhachHang(string makh)
+        {
+            string cmdText = "Detele from Khachhang where MaKH = '" + makh + "'";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public DataTable LayThongTinKhachHang()
+        {
+            string cmdText = "select * from Khachhang ";
+            DataTable dataTable = Layer01.GetDataTable(cmdText);
+            return dataTable;
+        }
+        public DataTable TimKiemTinKhachHang(string tenkh)
+        {
+            string cmdText = "select * from Khachhang where TenKH like N'" + tenkh + "%'";
+            DataTable dataTable = Layer01.GetDataTable(cmdText);
+            return dataTable;
+        }
+        // Nhà Cung Cấp
+        public void ThemBangNhaCungCap(string mancc, string tenncc, string diachi, string sdt, string email)
+        {
+            string cmdText = "insert into Nhacungcap values('" + mancc + "','" + tenncc 
+                + "','" + diachi + "','" + sdt + "','" + email + "')";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public void SuaBangNhaCungCap(string mancc, string tenncc, string diachi, string sdt, string email)
+        {
+            string cmdText = "update Nhacungcap set TenNCC = '" + tenncc + "', Diachi = '" + diachi
+                + "', Sdt = '" + sdt + "', Email = '" + email + "' where MaNCC = '" + mancc + "'";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public void XoaBangNhaCungCap(string mancc)
+        {
+            string cmdText = "Detele from Nhacungcap where MaNCC = '" + mancc + "'";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public DataTable TimkiemthongTinNhaCungCap(string tenncc)
+        {
+            string cmdText = "select * from Nhacungcap where TenNCC like N'"+ tenncc + "%' ";
+            DataTable dataTable = Layer01.GetDataTable(cmdText);
+            return dataTable;
+        }
+        public DataTable LayThongTinNhaCungCap()
+        {
+            string cmdText = "select * from Nhacungcap ";
+            DataTable dataTable = Layer01.GetDataTable(cmdText);
+            return dataTable;
+        }
+        // Kho hàng
+        public void ThemBangNhaKho(string mank, string tennk, string diachi)
+        {
+            string cmdText = "insert into Nhakho values('" + mank + "','" + tennk
+                + "','" + diachi + "')";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public void SuaBangNhaKho(string mank, string tennk, string diachi)
+        {
+            string cmdText = "update Nhakho set TenNK = '" + tennk + "', Diachi = '" + diachi
+                + "' where MaNK = '" + mank + "'";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public void XoaBangNhaKho(string mank)
+        {
+            string cmdText = "Detele from Nhakho where MaNK = '" + mank + "'";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public DataTable TimkiemthongTinNhaKho(string tennk)
+        {
+            string cmdText = "select * from Nhakho where TenNK like N'" + tennk + "%' ";
+            DataTable dataTable = Layer01.GetDataTable(cmdText);
+            return dataTable;
+        }
+        public DataTable LayThongTinNhaKho()
+        {
+            string cmdText = "select * from Nhakho ";
+            DataTable dataTable = Layer01.GetDataTable(cmdText);
+            return dataTable;
+        }
+        // Nhóm hàng-danhmuc
+        public void ThemBangDanhMuc(string madm, string tendm)
+        {
+            string cmdText = "insert into Danhmuc values('" + madm + "','" + tendm
+                + "')";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public void SuaBangDanhmuc(string madm, string tendm)
+        {
+            string cmdText = "update Danhmuc set TenDM = '" + tendm + "'where MaDM = '" + madm + "'";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public void XoaBangDanhmuc(string madm)
+        {
+            string cmdText = "Detele from Danhmuc where MaDM = '" + madm + "'";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public DataTable TimkiemthongTinDanhMuc(string tendm)
+        {
+            string cmdText = "select * from Danhmuc where TenDM like N'" + tendm + "%' ";
+            DataTable dataTable = Layer01.GetDataTable(cmdText);
+            return dataTable;
+        }
+        public DataTable LayThongTinDanhmuc()
+        {
+            string cmdText = "select * from Danhmuc ";
+            DataTable dataTable = Layer01.GetDataTable(cmdText);
+            return dataTable;
+        }
+
     }
 }
