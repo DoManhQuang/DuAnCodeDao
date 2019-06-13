@@ -36,7 +36,7 @@ namespace QuanLyNhaKho
                     if (chucnang == 1)
                     {
                         // Quản lý
-                        QuanLyNhanVien formQuanLy = new QuanLyNhanVien();
+                        FormQuanLyVien formQuanLy = new FormQuanLyVien();
                         this.Hide();
                         formQuanLy.ShowDialog();
                         this.Close();

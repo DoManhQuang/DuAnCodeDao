@@ -37,7 +37,8 @@ namespace QuanLyNhaKho
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            layer02.ThemBangNhaCungCap(getMaNCC(), txtTenNCC.Text.Trim(), txtDiachi.Text.Trim(), txtSDT.Text.Trim(), txtEmail.Text.Trim());
+            string numberID = "NCC000" + layer02.GetMaNCC().ToString();
+            layer02.ThemBangNhaCungCap(numberID, txtTenNCC.Text.Trim(), txtDiachi.Text.Trim(), txtSDT.Text.Trim(), txtEmail.Text.Trim());
             NhaCungCap_Load(sender, e);
         }
 
@@ -64,6 +65,22 @@ namespace QuanLyNhaKho
             this.Hide();
             formQuanLyVien.ShowDialog();
             this.Close();
+        }
+
+        private void dgvNhaCC_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow viewRow = dgvNhaCC.Rows[e.RowIndex];
+                if (viewRow != null)
+                {
+                    setMaNCC(viewRow.Cells[0].Value.ToString());
+                    txtTenNCC.Text = viewRow.Cells[1].Value.ToString();
+                    txtSDT.Text = viewRow.Cells[3].Value.ToString();
+                    txtDiachi.Text = viewRow.Cells[2].Value.ToString();
+                    txtEmail.Text = viewRow.Cells[4].Value.ToString();
+                }
+            }
         }
     }
 }

@@ -18,7 +18,7 @@ namespace QuanLyNhaKho
         }
         private void btnQLNV_Click(object sender, EventArgs e)
         {
-            FormQuanLyVien formQuanLyVien = new FormQuanLyVien();
+            QuanLyNhanVien formQuanLyVien = new QuanLyNhanVien();
             this.Hide();
             formQuanLyVien.ShowDialog();
             this.Close();

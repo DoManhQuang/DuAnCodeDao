@@ -35,7 +35,8 @@ namespace QuanLyNhaKho
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            layer02.ThemBangNhaKho(getMaNK(), txtTenNK.Text.Trim(), txtDiachi.Text.Trim());
+            string numberID = "NK000" + layer02.GetMaNK().ToString();
+            layer02.ThemBangNhaKho(numberID, txtTenNK.Text.Trim(), txtDiachi.Text.Trim());
             KhoHang_Load(sender, e);
         }
 
@@ -62,6 +63,20 @@ namespace QuanLyNhaKho
             this.Hide();
             formQuanLyVien.ShowDialog();
             this.Close();
+        }
+
+        private void dgvKhoHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow viewRow = dgvKhoHang.Rows[e.RowIndex];
+                if (viewRow != null)
+                {
+                    setMaNK(viewRow.Cells[0].Value.ToString());
+                    txtTenNK.Text = viewRow.Cells[1].Value.ToString();
+                    txtDiachi.Text = viewRow.Cells[2].Value.ToString();
+                }
+            }
         }
     }
 }

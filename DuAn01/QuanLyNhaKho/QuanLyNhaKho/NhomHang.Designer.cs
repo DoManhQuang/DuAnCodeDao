@@ -93,6 +93,7 @@
             // 
             // dgvNhomHang
             // 
+            this.dgvNhomHang.AllowUserToAddRows = false;
             this.dgvNhomHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNhomHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhomHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -104,14 +105,17 @@
             this.dgvNhomHang.RowTemplate.Height = 24;
             this.dgvNhomHang.Size = new System.Drawing.Size(800, 230);
             this.dgvNhomHang.TabIndex = 22;
+            this.dgvNhomHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhomHang_CellClick);
             // 
             // Column1
             // 
+            this.Column1.DataPropertyName = "MaDM";
             this.Column1.HeaderText = "Mã Nhóm Hàng";
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
+            this.Column2.DataPropertyName = "TenDM";
             this.Column2.HeaderText = "Tên Nhóm Hàng";
             this.Column2.Name = "Column2";
             // 

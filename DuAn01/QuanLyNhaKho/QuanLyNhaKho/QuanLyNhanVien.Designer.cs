@@ -29,6 +29,15 @@
         private void InitializeComponent()
         {
             this.dgvNhavien = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -39,7 +48,7 @@
             this.txtSdt = new System.Windows.Forms.TextBox();
             this.txtChucvu = new System.Windows.Forms.TextBox();
             this.txtTenNV = new System.Windows.Forms.TextBox();
-            this.btnDangxuat = new System.Windows.Forms.Button();
+            this.btnQuaylai = new System.Windows.Forms.Button();
             this.btnTimkiem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
@@ -51,21 +60,13 @@
             this.rdNu = new System.Windows.Forms.RadioButton();
             this.txtPhanquyen = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRestart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhavien)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvNhavien
             // 
+            this.dgvNhavien.AllowUserToAddRows = false;
             this.dgvNhavien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNhavien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhavien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -84,6 +85,63 @@
             this.dgvNhavien.RowTemplate.Height = 24;
             this.dgvNhavien.Size = new System.Drawing.Size(844, 309);
             this.dgvNhavien.TabIndex = 22;
+            this.dgvNhavien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhavien_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaNV";
+            this.Column1.HeaderText = "Mã NV";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TenNV";
+            this.Column2.HeaderText = "Tên NV";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Chucvu";
+            this.Column3.HeaderText = "Chức Vụ";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Gioitinh";
+            this.Column4.HeaderText = "Giới Tính";
+            this.Column4.Name = "Column4";
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Ngaysinh";
+            this.Column5.HeaderText = "Ngày Sinh";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Sdt";
+            this.Column6.HeaderText = "Số Điện Thoại";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Diachi";
+            this.Column7.HeaderText = "Địa Chỉ";
+            this.Column7.Name = "Column7";
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "Phanquyen";
+            this.Column8.HeaderText = "Phân Quyền";
+            this.Column8.Name = "Column8";
             // 
             // label7
             // 
@@ -169,14 +227,15 @@
             this.txtTenNV.Size = new System.Drawing.Size(183, 22);
             this.txtTenNV.TabIndex = 11;
             // 
-            // btnDangxuat
+            // btnQuaylai
             // 
-            this.btnDangxuat.Location = new System.Drawing.Point(717, 12);
-            this.btnDangxuat.Name = "btnDangxuat";
-            this.btnDangxuat.Size = new System.Drawing.Size(115, 37);
-            this.btnDangxuat.TabIndex = 9;
-            this.btnDangxuat.Text = "Đăng Xuất";
-            this.btnDangxuat.UseVisualStyleBackColor = true;
+            this.btnQuaylai.Location = new System.Drawing.Point(717, 12);
+            this.btnQuaylai.Name = "btnQuaylai";
+            this.btnQuaylai.Size = new System.Drawing.Size(115, 37);
+            this.btnQuaylai.TabIndex = 9;
+            this.btnQuaylai.Text = "Quay Lại";
+            this.btnQuaylai.UseVisualStyleBackColor = true;
+            this.btnQuaylai.Click += new System.EventHandler(this.btnQuaylai_Click);
             // 
             // btnTimkiem
             // 
@@ -278,62 +337,6 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "Phân quyền";
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "MaNV";
-            this.Column1.HeaderText = "Mã NV";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "TenNV";
-            this.Column2.HeaderText = "Tên NV";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Chucvu";
-            this.Column3.HeaderText = "Chức Vụ";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Gioitinh";
-            this.Column4.HeaderText = "Giới Tính";
-            this.Column4.Name = "Column4";
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Ngaysinh";
-            this.Column5.HeaderText = "Ngày Sinh";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "Sdt";
-            this.Column6.HeaderText = "Số Điện Thoại";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "Diachi";
-            this.Column7.HeaderText = "Địa Chỉ";
-            this.Column7.Name = "Column7";
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "Phanquyen";
-            this.Column8.HeaderText = "Phân Quyền";
-            this.Column8.Name = "Column8";
-            // 
             // btnRestart
             // 
             this.btnRestart.Location = new System.Drawing.Point(667, 256);
@@ -368,7 +371,7 @@
             this.Controls.Add(this.txtChucvu);
             this.Controls.Add(this.txtTenNV);
             this.Controls.Add(this.btnRestart);
-            this.Controls.Add(this.btnDangxuat);
+            this.Controls.Add(this.btnQuaylai);
             this.Controls.Add(this.btnTimkiem);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
@@ -395,7 +398,7 @@
         private System.Windows.Forms.TextBox txtSdt;
         private System.Windows.Forms.TextBox txtChucvu;
         private System.Windows.Forms.TextBox txtTenNV;
-        private System.Windows.Forms.Button btnDangxuat;
+        private System.Windows.Forms.Button btnQuaylai;
         private System.Windows.Forms.Button btnTimkiem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;

@@ -69,8 +69,8 @@ namespace QuanLyNhaKho
         }
         public void SuaBangNhanvien(string MaNV, string TenNV, string Chucvu, int Gioitinh, string Ngaysinh, string Sdt, string Diachi, string Email, string Phanquyen)
         {
-            string cmdText = "Update Nhanvien set TenNV = N'" + TenNV + "' ,Chucvu = '" + Chucvu + "' , " +
-                "Gioitinh = " + Gioitinh + "' , Ngaysinh = '" + Ngaysinh + "', Sdt = '" + Sdt + "', Diachi = '" + Diachi + "', Email = '" + Email + "', Phanquyen = '" + Phanquyen + "' where MaNV = '" + MaNV + "'";
+            string cmdText = "Update Nhanvien set TenNV = N'" + TenNV + "' ,Chucvu = N'" + Chucvu + "' , " +
+                "Gioitinh = '" + Gioitinh + "' , Ngaysinh = '" + Ngaysinh + "', Sdt = '" + Sdt + "', Diachi = '" + Diachi + "', Email = '" + Email + "', Phanquyen = '" + Phanquyen + "' where MaNV = '" + MaNV + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public DataTable TimKiemBangNhanvien(string tennv)
@@ -120,16 +120,6 @@ namespace QuanLyNhaKho
             string cmdText = "Update Nhanvien set Taikhoan = '" + taikhoan + "' ,Matkhau = '" + matkhau + "' where MaNV = '" + MaNV + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
-        //public int DemMaNV()
-        //{
-        //    string cmdText = "select count(MaNV) from NhanVien"; //where CustomersName = N'" + tenkh + "'";
-        //    SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
-        //    if (dataReader.Read())
-        //    {
-        //        return Int32.Parse(dataReader[0].ToString());
-        //    }
-        //    return 0;
-        //}
         //public string XuLyMaNC(string manc)
         //{
         //    manc = manc.Remove(0, 2);
@@ -137,27 +127,77 @@ namespace QuanLyNhaKho
         //    manc = "NC00" + mancNew;
         //    return manc;
         //}
-        //public string GetMaNCNew()
-        //{
-        //    string cmdText = "select dbo.DemsoluongMaNC()";
-        //    SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
-        //    if (dataReader.Read())
-        //    {
-        //        return XuLyMaNC(dataReader[0].ToString());
-        //    }
-        //    return null;
-        //}
-
+        // Xử lý mã tự sinh
+        public int GetMaDM()
+        {
+            string cmdText = "select top(1) MaDM from Danhmuc order by MaDM desc";
+            SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
+            if(dataReader.Read())
+            {
+                string CodeID = dataReader[0].ToString();
+                int numberID = int.Parse(CodeID.Remove(0, 3));
+                return numberID + 1;
+            }
+            return 0;
+        }
+        public int GetMaKH()
+        {
+            string cmdText = "select top(1) MaKH from Khachhang order by MaKH desc";
+            SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
+            if (dataReader.Read())
+            {
+                string CodeID = dataReader[0].ToString();
+                int numberID = int.Parse(CodeID.Remove(0, 3));
+                return numberID + 1;
+            }
+            return 0;
+        }
+        public int GetMaNCC()
+        {
+            string cmdText = "select top(1) MaNCC from Nhacungcap order by MaNCC desc";
+            SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
+            if (dataReader.Read())
+            {
+                string CodeID = dataReader[0].ToString();
+                int numberID = int.Parse(CodeID.Remove(0, 3));
+                return numberID + 1;
+            }
+            return 0;
+        }
+        public int GetMaNK()
+        {
+            string cmdText = "select top(1) MaNK from Nhakho order by MaNK desc";
+            SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
+            if (dataReader.Read())
+            {
+                string CodeID = dataReader[0].ToString();
+                int numberID = int.Parse(CodeID.Remove(0, 3));
+                return numberID + 1;
+            }
+            return 0;
+        }
+        public int GetMaNV()
+        {
+            string cmdText = "select top(1) MaNV from Nhanvien order by MaNV desc";
+            SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
+            if (dataReader.Read())
+            {
+                string CodeID = dataReader[0].ToString();
+                int numberID = int.Parse(CodeID.Remove(0, 3));
+                return numberID + 1;
+            }
+            return 0;
+        }
         // Khách Hàng
         public void SuaBangKhachHang(string makh, string tenkh, string diachi, string sdt, string email)
         {
-            string cmdText = "update Khachhang set TenKH = '" + tenkh + "', Diachi = '" + diachi
+            string cmdText = "update Khachhang set TenKH = N'" + tenkh + "', Diachi = N'" + diachi
                 + "', Sdt = '" + sdt + "', Email = '" + email + "' where MaKH = '" + makh + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public void XoaBangKhachHang(string makh)
         {
-            string cmdText = "Detele from Khachhang where MaKH = '" + makh + "'";
+            string cmdText = "Delete from Khachhang where MaKH = '" + makh + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public DataTable LayThongTinKhachHang()
@@ -175,19 +215,19 @@ namespace QuanLyNhaKho
         // Nhà Cung Cấp
         public void ThemBangNhaCungCap(string mancc, string tenncc, string diachi, string sdt, string email)
         {
-            string cmdText = "insert into Nhacungcap values('" + mancc + "','" + tenncc 
-                + "','" + diachi + "','" + sdt + "','" + email + "')";
+            string cmdText = "insert into Nhacungcap values('" + mancc + "',N'" + tenncc 
+                + "',N'" + diachi + "','" + sdt + "','" + email + "')";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public void SuaBangNhaCungCap(string mancc, string tenncc, string diachi, string sdt, string email)
         {
-            string cmdText = "update Nhacungcap set TenNCC = '" + tenncc + "', Diachi = '" + diachi
+            string cmdText = "update Nhacungcap set TenNCC = N'" + tenncc + "', Diachi = N'" + diachi
                 + "', Sdt = '" + sdt + "', Email = '" + email + "' where MaNCC = '" + mancc + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public void XoaBangNhaCungCap(string mancc)
         {
-            string cmdText = "Detele from Nhacungcap where MaNCC = '" + mancc + "'";
+            string cmdText = "Delete from Nhacungcap where MaNCC = '" + mancc + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public DataTable TimkiemthongTinNhaCungCap(string tenncc)
@@ -206,18 +246,18 @@ namespace QuanLyNhaKho
         public void ThemBangNhaKho(string mank, string tennk, string diachi)
         {
             string cmdText = "insert into Nhakho values('" + mank + "','" + tennk
-                + "','" + diachi + "')";
+                + "',N'" + diachi + "')";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public void SuaBangNhaKho(string mank, string tennk, string diachi)
         {
-            string cmdText = "update Nhakho set TenNK = '" + tennk + "', Diachi = '" + diachi
+            string cmdText = "update Nhakho set TenNK = '" + tennk + "', Diachi = N'" + diachi
                 + "' where MaNK = '" + mank + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public void XoaBangNhaKho(string mank)
         {
-            string cmdText = "Detele from Nhakho where MaNK = '" + mank + "'";
+            string cmdText = "Delete from Nhakho where MaNK = '" + mank + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public DataTable TimkiemthongTinNhaKho(string tennk)
@@ -235,18 +275,18 @@ namespace QuanLyNhaKho
         // Nhóm hàng-danhmuc
         public void ThemBangDanhMuc(string madm, string tendm)
         {
-            string cmdText = "insert into Danhmuc values('" + madm + "','" + tendm
+            string cmdText = "insert into Danhmuc values('" + madm + "',N'" + tendm
                 + "')";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public void SuaBangDanhmuc(string madm, string tendm)
         {
-            string cmdText = "update Danhmuc set TenDM = '" + tendm + "'where MaDM = '" + madm + "'";
+            string cmdText = "update Danhmuc set TenDM = N'" + tendm + "'where MaDM = '" + madm + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public void XoaBangDanhmuc(string madm)
         {
-            string cmdText = "Detele from Danhmuc where MaDM = '" + madm + "'";
+            string cmdText = "Delete from Danhmuc where MaDM = '" + madm + "'";
             Layer01.ExecuteNonQuery(cmdText);
         }
         public DataTable TimkiemthongTinDanhMuc(string tendm)

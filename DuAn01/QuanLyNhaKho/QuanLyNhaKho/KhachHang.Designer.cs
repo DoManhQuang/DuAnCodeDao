@@ -67,6 +67,7 @@
             // 
             // dgvDanhSachKH
             // 
+            this.dgvDanhSachKH.AllowUserToAddRows = false;
             this.dgvDanhSachKH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDanhSachKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDanhSachKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -81,29 +82,35 @@
             this.dgvDanhSachKH.RowTemplate.Height = 24;
             this.dgvDanhSachKH.Size = new System.Drawing.Size(800, 223);
             this.dgvDanhSachKH.TabIndex = 3;
+            this.dgvDanhSachKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachKH_CellClick);
             // 
             // Column1
             // 
+            this.Column1.DataPropertyName = "MaKH";
             this.Column1.HeaderText = "Mã Khách Hàng";
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
+            this.Column2.DataPropertyName = "TenKH";
             this.Column2.HeaderText = "Tên Khách Hàng";
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
+            this.Column3.DataPropertyName = "Sdt";
             this.Column3.HeaderText = "Số Điện Thoại";
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
+            this.Column4.DataPropertyName = "Diachi";
             this.Column4.HeaderText = "Địa Chỉ";
             this.Column4.Name = "Column4";
             // 
             // Column5
             // 
+            this.Column5.DataPropertyName = "Email";
             this.Column5.HeaderText = "Email";
             this.Column5.Name = "Column5";
             // 

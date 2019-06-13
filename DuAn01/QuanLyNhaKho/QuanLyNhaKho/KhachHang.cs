@@ -58,5 +58,21 @@ namespace QuanLyNhaKho
             formQuanLyVien.ShowDialog();
             this.Close();
         }
+
+        private void dgvDanhSachKH_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow viewRow = dgvDanhSachKH.Rows[e.RowIndex];
+                if (viewRow != null)
+                { 
+                    setMaKH(viewRow.Cells[0].Value.ToString());
+                    txtTenKH.Text = viewRow.Cells[1].Value.ToString();
+                    txtSdt.Text = viewRow.Cells[2].Value.ToString();
+                    txtDiachi.Text = viewRow.Cells[3].Value.ToString();
+                    txtEmail.Text = viewRow.Cells[4].Value.ToString();
+                }
+            }
+        }
     }
 }

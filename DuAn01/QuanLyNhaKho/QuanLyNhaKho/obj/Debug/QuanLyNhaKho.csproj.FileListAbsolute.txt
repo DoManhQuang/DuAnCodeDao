@@ -26,3 +26,8 @@ G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaK
 G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.exe
 G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.pdb
 G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.FormQuanLyKho.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.FormQuanLyVien.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.KhachHang.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.KhoHang.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.NhaCungCap.resources
+G:\Github Page\DuAnCodeDao\DuAn01\QuanLyNhaKho\QuanLyNhaKho\obj\Debug\QuanLyNhaKho.NhomHang.resources

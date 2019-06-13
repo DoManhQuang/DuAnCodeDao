@@ -26,9 +26,15 @@ namespace QuanLyNhaKho
         {
             return MaDM;
         }
+        private void NhomHang_Load(object sender, EventArgs e)
+        {
+            txtTenNH.Clear();
+            dgvNhomHang.DataSource = layer02.LayThongTinDanhmuc();
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
-            layer02.ThemBangDanhMuc(getMaDM(), txtTenNH.Text.Trim());
+            string numberID = "DM000" + layer02.GetMaDM().ToString();
+            layer02.ThemBangDanhMuc(numberID, txtTenNH.Text.Trim());
             NhomHang_Load(sender, e);
         }
 
@@ -46,21 +52,27 @@ namespace QuanLyNhaKho
 
         private void btnTimkiem_Click(object sender, EventArgs e)
         {
-            layer02.TimkiemthongTinDanhMuc(txtTenNH.Text.Trim());
+            dgvNhomHang.DataSource = layer02.TimkiemthongTinDanhMuc(txtTenNH.Text.Trim());
         }
-
-        private void NhomHang_Load(object sender, EventArgs e)
-        {
-            txtTenNH.Clear();
-            dgvNhomHang.DataSource = layer02.LayThongTinDanhmuc();
-        }
-
         private void btnQuaylai_Click(object sender, EventArgs e)
         {
             FormQuanLyVien formQuanLyVien = new FormQuanLyVien();
             this.Hide();
             formQuanLyVien.ShowDialog();
             this.Close();
+        }
+
+        private void dgvNhomHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow viewRow = dgvNhomHang.Rows[e.RowIndex];
+                if (viewRow != null)
+                {
+                    setMaDM(viewRow.Cells[0].Value.ToString());
+                    txtTenNH.Text = viewRow.Cells[1].Value.ToString();
+                }
+            }
         }
     }
 }
