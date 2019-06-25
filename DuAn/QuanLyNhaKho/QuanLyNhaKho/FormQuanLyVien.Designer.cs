@@ -41,7 +41,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(537, 132);
+            this.label1.Location = new System.Drawing.Point(611, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(542, 69);
             this.label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.btnQLKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLKH.Image = global::QuanLyNhaKho.Properties.Resources.nhanvien;
-            this.btnQLKH.Location = new System.Drawing.Point(432, 512);
+            this.btnQLKH.Location = new System.Drawing.Point(388, 530);
             this.btnQLKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQLKH.Name = "btnQLKH";
             this.btnQLKH.Size = new System.Drawing.Size(288, 154);
@@ -65,7 +65,7 @@
             // 
             this.btnQLNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLNCC.Image = global::QuanLyNhaKho.Properties.Resources.icons8_supplier_53;
-            this.btnQLNCC.Location = new System.Drawing.Point(1095, 326);
+            this.btnQLNCC.Location = new System.Drawing.Point(1051, 344);
             this.btnQLNCC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQLNCC.Name = "btnQLNCC";
             this.btnQLNCC.Size = new System.Drawing.Size(303, 151);
@@ -79,7 +79,7 @@
             // 
             this.btnQLNH.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLNH.Image = global::QuanLyNhaKho.Properties.Resources.sanpham;
-            this.btnQLNH.Location = new System.Drawing.Point(756, 512);
+            this.btnQLNH.Location = new System.Drawing.Point(712, 530);
             this.btnQLNH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQLNH.Name = "btnQLNH";
             this.btnQLNH.Size = new System.Drawing.Size(301, 154);
@@ -93,7 +93,7 @@
             // 
             this.btnKhoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhoHang.Image = global::QuanLyNhaKho.Properties.Resources.nhakho;
-            this.btnKhoHang.Location = new System.Drawing.Point(756, 326);
+            this.btnKhoHang.Location = new System.Drawing.Point(712, 344);
             this.btnKhoHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnKhoHang.Name = "btnKhoHang";
             this.btnKhoHang.Size = new System.Drawing.Size(301, 151);
@@ -107,7 +107,7 @@
             // 
             this.btnQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLNV.Image = global::QuanLyNhaKho.Properties.Resources.kh;
-            this.btnQLNV.Location = new System.Drawing.Point(432, 326);
+            this.btnQLNV.Location = new System.Drawing.Point(388, 344);
             this.btnQLNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQLNV.Name = "btnQLNV";
             this.btnQLNV.Size = new System.Drawing.Size(288, 151);
@@ -121,7 +121,7 @@
             // 
             this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat.Image = global::QuanLyNhaKho.Properties.Resources.icons8_export_48;
-            this.btnDangXuat.Location = new System.Drawing.Point(1095, 512);
+            this.btnDangXuat.Location = new System.Drawing.Point(1051, 530);
             this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(303, 154);
