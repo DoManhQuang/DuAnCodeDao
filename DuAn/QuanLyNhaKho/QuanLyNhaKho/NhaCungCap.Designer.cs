@@ -248,7 +248,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "NhaCungCap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nhà cung cấp";
+            this.Text = "Quản Lý Nhà cung cấp";
             this.Load += new System.EventHandler(this.NhaCungCap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCC)).EndInit();
             this.ResumeLayout(false);

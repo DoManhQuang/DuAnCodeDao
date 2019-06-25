@@ -43,9 +43,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(537, 132);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(704, 69);
+            this.label1.Size = new System.Drawing.Size(542, 69);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Chức Năng Quản Lý Viên";
+            this.label1.Text = "Quản Lý Danh Mục";
             // 
             // btnQLKH
             // 
@@ -122,7 +122,7 @@
             this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat.Image = global::QuanLyNhaKho.Properties.Resources.icons8_export_48;
             this.btnDangXuat.Location = new System.Drawing.Point(1095, 512);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(303, 154);
             this.btnDangXuat.TabIndex = 2;
@@ -146,7 +146,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormQuanLyVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quản lý";
+            this.Text = "Quản lý kho hàng Thịnh Hưng";
             this.ResumeLayout(false);
             this.PerformLayout();
 

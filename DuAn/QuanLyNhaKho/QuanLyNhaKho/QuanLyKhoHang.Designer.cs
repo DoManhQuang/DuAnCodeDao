@@ -63,7 +63,7 @@
             this.panel2.Controls.Add(this.btnPhieunhap);
             this.panel2.Controls.Add(this.btnTondauky);
             this.panel2.Controls.Add(this.btnKiemKe);
-            this.panel2.Location = new System.Drawing.Point(69, 202);
+            this.panel2.Location = new System.Drawing.Point(145, 200);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(922, 382);
@@ -78,7 +78,7 @@
             this.btnBaoCao.Name = "btnBaoCao";
             this.btnBaoCao.Size = new System.Drawing.Size(281, 140);
             this.btnBaoCao.TabIndex = 14;
-            this.btnBaoCao.Text = "Báo cáo";
+            this.btnBaoCao.Text = "Báo cáo Thông Kê";
             this.btnBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnBaoCao.UseVisualStyleBackColor = true;
             this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
@@ -106,7 +106,7 @@
             this.btnPhieuxuat.Name = "btnPhieuxuat";
             this.btnPhieuxuat.Size = new System.Drawing.Size(287, 143);
             this.btnPhieuxuat.TabIndex = 10;
-            this.btnPhieuxuat.Text = "Quản Lý Phiếu Xuất";
+            this.btnPhieuxuat.Text = "Quản Lý Xuất Kho";
             this.btnPhieuxuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnPhieuxuat.UseVisualStyleBackColor = true;
             this.btnPhieuxuat.Click += new System.EventHandler(this.btnPhieuxuat_Click);
@@ -120,7 +120,7 @@
             this.btnPhieunhap.Name = "btnPhieunhap";
             this.btnPhieunhap.Size = new System.Drawing.Size(279, 143);
             this.btnPhieunhap.TabIndex = 11;
-            this.btnPhieunhap.Text = "Quản Lý Phiếu Nhập";
+            this.btnPhieunhap.Text = "Quản Lý Nhập Kho";
             this.btnPhieunhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnPhieunhap.UseVisualStyleBackColor = true;
             this.btnPhieunhap.Click += new System.EventHandler(this.btnPhieunhap_Click);
@@ -148,7 +148,7 @@
             this.btnKiemKe.Name = "btnKiemKe";
             this.btnKiemKe.Size = new System.Drawing.Size(280, 143);
             this.btnKiemKe.TabIndex = 12;
-            this.btnKiemKe.Text = "Kiểm Kê Hàng Hóa";
+            this.btnKiemKe.Text = "Quản Lý Kiểm Kê";
             this.btnKiemKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnKiemKe.UseVisualStyleBackColor = true;
             this.btnKiemKe.Click += new System.EventHandler(this.btnKiemKe_Click);
@@ -160,9 +160,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(343, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(536, 55);
+            this.label1.Size = new System.Drawing.Size(434, 55);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Quản Lý Kho Hàng Hóa";
+            this.label1.Text = "Quản Lý Kho Hàng";
             // 
             // QuanLyKhoHang
             // 

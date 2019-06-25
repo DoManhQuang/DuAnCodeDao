@@ -75,7 +75,7 @@
             // 
             this.btnTonkho.Image = global::QuanLyNhaKho.Properties.Resources.icons8_open_box_24;
             this.btnTonkho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTonkho.Location = new System.Drawing.Point(630, 107);
+            this.btnTonkho.Location = new System.Drawing.Point(604, 115);
             this.btnTonkho.Name = "btnTonkho";
             this.btnTonkho.Padding = new System.Windows.Forms.Padding(25, 0, 14, 0);
             this.btnTonkho.Size = new System.Drawing.Size(171, 37);

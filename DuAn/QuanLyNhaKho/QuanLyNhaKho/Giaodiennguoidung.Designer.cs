@@ -68,11 +68,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(239, 83);
+            this.label1.Location = new System.Drawing.Point(329, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(524, 39);
+            this.label1.Size = new System.Drawing.Size(348, 38);
             this.label1.TabIndex = 1;
-            this.label1.Text = "PHẦN MỀM QUẢN LÝ NHÀ KHO";
+            this.label1.Text = "QUẢN LÝ KHO HÀNG";
             // 
             // Giaodiennguoidung
             // 
@@ -84,7 +84,7 @@
             this.Controls.Add(this.btnQLKH);
             this.Controls.Add(this.btnQLDM);
             this.Name = "Giaodiennguoidung";
-            this.Text = "Giao Diện Người Dùng";
+            this.Text = "QUẢN LÝ KHO HÀNG THỊNH HƯNG";
             this.ResumeLayout(false);
             this.PerformLayout();
 
