@@ -44,7 +44,6 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnQuaylai = new System.Windows.Forms.Button();
             this.btnTimkiem = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCC)).BeginInit();
@@ -53,19 +52,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(29, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.Size = new System.Drawing.Size(129, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên Nhà Cung Cấp";
             // 
             // txtTenNCC
             // 
-            this.txtTenNCC.Location = new System.Drawing.Point(145, 22);
-            this.txtTenNCC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenNCC.Location = new System.Drawing.Point(193, 27);
+            this.txtTenNCC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenNCC.Name = "txtTenNCC";
-            this.txtTenNCC.Size = new System.Drawing.Size(130, 20);
+            this.txtTenNCC.Size = new System.Drawing.Size(172, 22);
             this.txtTenNCC.TabIndex = 1;
             // 
             // dgvNhaCC
@@ -80,11 +78,11 @@
             this.Column4,
             this.Column5});
             this.dgvNhaCC.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvNhaCC.Location = new System.Drawing.Point(0, 179);
-            this.dgvNhaCC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvNhaCC.Location = new System.Drawing.Point(0, 220);
+            this.dgvNhaCC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvNhaCC.Name = "dgvNhaCC";
             this.dgvNhaCC.RowTemplate.Height = 24;
-            this.dgvNhaCC.Size = new System.Drawing.Size(600, 187);
+            this.dgvNhaCC.Size = new System.Drawing.Size(800, 230);
             this.dgvNhaCC.TabIndex = 2;
             this.dgvNhaCC.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhaCC_CellClick);
             // 
@@ -121,66 +119,63 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(357, 24);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(476, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.Size = new System.Drawing.Size(98, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Số Điện Thoại";
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(443, 22);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSDT.Location = new System.Drawing.Point(591, 27);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(130, 20);
+            this.txtSDT.Size = new System.Drawing.Size(172, 22);
             this.txtSDT.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 67);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(29, 82);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(53, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "Địa Chỉ";
             // 
             // txtDiachi
             // 
-            this.txtDiachi.Location = new System.Drawing.Point(145, 65);
-            this.txtDiachi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiachi.Location = new System.Drawing.Point(193, 80);
+            this.txtDiachi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiachi.Name = "txtDiachi";
-            this.txtDiachi.Size = new System.Drawing.Size(130, 20);
+            this.txtDiachi.Size = new System.Drawing.Size(172, 22);
             this.txtDiachi.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(357, 67);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(476, 82);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(42, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "Email";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(443, 65);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Location = new System.Drawing.Point(591, 80);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(130, 20);
+            this.txtEmail.Size = new System.Drawing.Size(172, 22);
             this.txtEmail.TabIndex = 1;
             // 
             // btnQuaylai
             // 
             this.btnQuaylai.Image = global::QuanLyNhaKho.Properties.Resources.icons8_left_26;
             this.btnQuaylai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuaylai.Location = new System.Drawing.Point(473, 117);
-            this.btnQuaylai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQuaylai.Location = new System.Drawing.Point(563, 145);
+            this.btnQuaylai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuaylai.Name = "btnQuaylai";
-            this.btnQuaylai.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.btnQuaylai.Size = new System.Drawing.Size(91, 34);
+            this.btnQuaylai.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.btnQuaylai.Size = new System.Drawing.Size(121, 42);
             this.btnQuaylai.TabIndex = 3;
             this.btnQuaylai.Text = "Quay Lại";
             this.btnQuaylai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -191,41 +186,26 @@
             // 
             this.btnTimkiem.Image = global::QuanLyNhaKho.Properties.Resources.icons8_view_24;
             this.btnTimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimkiem.Location = new System.Drawing.Point(368, 117);
-            this.btnTimkiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimkiem.Location = new System.Drawing.Point(423, 145);
+            this.btnTimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Padding = new System.Windows.Forms.Padding(8, 0, 3, 0);
-            this.btnTimkiem.Size = new System.Drawing.Size(88, 34);
+            this.btnTimkiem.Padding = new System.Windows.Forms.Padding(11, 0, 4, 0);
+            this.btnTimkiem.Size = new System.Drawing.Size(117, 42);
             this.btnTimkiem.TabIndex = 3;
             this.btnTimkiem.Text = "Tìm Kiếm";
             this.btnTimkiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimkiem.UseVisualStyleBackColor = true;
             this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
-            // btnXoa
-            // 
-            this.btnXoa.Image = global::QuanLyNhaKho.Properties.Resources.icons8_close_window_24;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(263, 117);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(19, 0, 14, 0);
-            this.btnXoa.Size = new System.Drawing.Size(89, 34);
-            this.btnXoa.TabIndex = 3;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
             // btnSua
             // 
             this.btnSua.Image = global::QuanLyNhaKho.Properties.Resources.icons8_edit_24;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(172, 117);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSua.Location = new System.Drawing.Point(276, 145);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Padding = new System.Windows.Forms.Padding(15, 0, 14, 0);
-            this.btnSua.Size = new System.Drawing.Size(87, 34);
+            this.btnSua.Padding = new System.Windows.Forms.Padding(20, 0, 19, 0);
+            this.btnSua.Size = new System.Drawing.Size(116, 42);
             this.btnSua.TabIndex = 3;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -236,11 +216,11 @@
             // 
             this.btnThem.Image = global::QuanLyNhaKho.Properties.Resources.icons8_plus_24;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(56, 117);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Location = new System.Drawing.Point(122, 145);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(15, 0, 11, 0);
-            this.btnThem.Size = new System.Drawing.Size(98, 34);
+            this.btnThem.Padding = new System.Windows.Forms.Padding(20, 0, 15, 0);
+            this.btnThem.Size = new System.Drawing.Size(131, 42);
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -249,12 +229,11 @@
             // 
             // NhaCungCap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnQuaylai);
             this.Controls.Add(this.btnTimkiem);
-            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dgvNhaCC);
@@ -266,7 +245,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtTenNCC);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "NhaCungCap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhà cung cấp";
@@ -290,7 +269,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnTimkiem;
         private System.Windows.Forms.Button btnQuaylai;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

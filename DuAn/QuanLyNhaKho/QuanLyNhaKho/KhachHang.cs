@@ -45,13 +45,6 @@ namespace QuanLyNhaKho
             layer02.SuaBangKhachHang(getMaKH(), txtTenKH.Text.Trim(), txtDiachi.Text.Trim(), txtSdt.Text.Trim(), txtEmail.Text.Trim());
             KhachHang_Load(sender, e);
         }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            layer02.XoaBangKhachHang(getMaKH());
-            KhachHang_Load(sender, e);
-        }
-
         private void btnTimkiem_Click(object sender, EventArgs e)
         {
             dgvDanhSachKH.DataSource = layer02.TimKiemTinKhachHang(txtTenKH.Text.Trim());

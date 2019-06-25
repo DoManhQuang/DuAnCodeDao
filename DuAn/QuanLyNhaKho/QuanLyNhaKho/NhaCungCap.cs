@@ -54,11 +54,6 @@ namespace QuanLyNhaKho
             NhaCungCap_Load(sender, e);
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            layer02.XoaBangNhaCungCap(getMaNCC());
-            NhaCungCap_Load(sender, e);
-        }
 
         private void btnTimkiem_Click(object sender, EventArgs e)
         {

@@ -50,12 +50,6 @@ namespace QuanLyNhaKho
             NhomHang_Load(sender, e);
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            layer02.XoaBangDanhmuc(getMaDM());
-            NhomHang_Load(sender, e);
-        }
-
         private void btnTimkiem_Click(object sender, EventArgs e)
         {
             dgvNhomHang.DataSource = layer02.TimkiemthongTinDanhMuc(txtTenNH.Text.Trim());
@@ -76,6 +70,7 @@ namespace QuanLyNhaKho
                 if (viewRow != null)
                 {
                     setMaDM(viewRow.Cells[0].Value.ToString());
+                    txtMa.Text = viewRow.Cells[0].Value.ToString();
                     txtTenNH.Text = viewRow.Cells[1].Value.ToString();
                 }
             }
