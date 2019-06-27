@@ -58,7 +58,7 @@ namespace QuanLyNhaKho
             cboDanhMuc.DisplayMember = "TenDM";
             cboDanhMuc.ValueMember = "MaDM";
             cboDanhMuc.SelectedItem = null;
-            cboDanhMuc.SelectedText = "--Chọn danh mục--";
+            cboDanhMuc.SelectedText = "--Chọn nhóm hàng--";
 
             txtMaHH.Text = SinhMaSoHangHoaTuDong();
 
@@ -110,7 +110,7 @@ namespace QuanLyNhaKho
             cboDanhMuc.DisplayMember = "TenDM";
             cboDanhMuc.ValueMember = "MaDM";
             cboDanhMuc.SelectedItem = null;
-            cboDanhMuc.SelectedText = "--Chọn danh mục--";
+            cboDanhMuc.SelectedText = "--Chọn nhóm hàng--";
 
             txtMaHH.Text = SinhMaSoHangHoaTuDong();
 

@@ -96,9 +96,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(436, 171);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 17);
+            this.label6.Size = new System.Drawing.Size(87, 17);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Danh mục:";
+            this.label6.Text = "Nhóm Hàng:";
             // 
             // label7
             // 
