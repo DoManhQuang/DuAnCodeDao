@@ -59,7 +59,7 @@ namespace QuanLyNhaKho
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
             Hide();
-            QuanLyBaoCao baocao = new QuanLyBaoCao();
+            QuanLyBaoCao baocao = new QuanLyBaoCao(NVDangNhap);
             baocao.ShowDialog();
             this.Close();
         }

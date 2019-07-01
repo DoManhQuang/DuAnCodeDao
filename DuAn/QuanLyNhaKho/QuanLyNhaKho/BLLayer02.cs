@@ -116,7 +116,7 @@ namespace QuanLyNhaKho
             string cmdText = "select Hanghoa.MaHH, TenHH, Dvt, Hansudung, Hanghoa.Giavon, Hanghoa.Soluong, TenDM, TenNK, Mota " +
                "from Nhakho inner join Phieunhap on Nhakho.MaNK = Phieunhap.MaNK inner join CTPhieunhap on CTPhieunhap.MaPN = Phieunhap.MaPN " +
                "inner join Hanghoa on CTPhieunhap.MaHH = Hanghoa.MaHH inner join Danhmuc on Danhmuc.MaDM = Hanghoa.MaDM " +
-               "where DATEDIFF(year, GETDATE(), Hansudung) = 0 and DATEDIFF(MONTH, GETDATE(), Hansudung) = 0 and DATEDIFF(day, GETDATE(), Hansudung) > 0";
+               "where DATEDIFF(year, GETDATE(), Hansudung) <= 0 and DATEDIFF(MONTH, GETDATE(), Hansudung) <= 0 and DATEDIFF(day, GETDATE(), Hansudung) > 0";
             DataTable dataTable = Layer01.GetDataTable(cmdText);
             return dataTable;
         }
@@ -125,7 +125,7 @@ namespace QuanLyNhaKho
             string cmdText = "select Hanghoa.MaHH, TenHH, Dvt, Hansudung, Hanghoa.Giavon, Hanghoa.Soluong, TenDM, TenNK, Mota " +
                "from Nhakho inner join Phieunhap on Nhakho.MaNK = Phieunhap.MaNK inner join CTPhieunhap on CTPhieunhap.MaPN = Phieunhap.MaPN " +
                "inner join Hanghoa on CTPhieunhap.MaHH = Hanghoa.MaHH inner join Danhmuc on Danhmuc.MaDM = Hanghoa.MaDM " +
-               "where DATEDIFF(year, GETDATE(), Hansudung) = 0 and DATEDIFF(MONTH, GETDATE(), Hansudung) = 0 and DATEDIFF(day, GETDATE(), Hansudung) <= 0";
+               "where DATEDIFF(year, GETDATE(), Hansudung) <= 0 and DATEDIFF(MONTH, GETDATE(), Hansudung) <= 0 and DATEDIFF(day, GETDATE(), Hansudung) <= 0";
             DataTable dataTable = Layer01.GetDataTable(cmdText);
             return dataTable;
         }
@@ -472,11 +472,11 @@ namespace QuanLyNhaKho
             {
                 string cmdText1 = "	INSERT INTO dbo.CTPhieunhap ( MaPN, MaHH, Soluong, Giavon ) VALUES  ( '" + MaPN + "', '" + item.MaHH + "', '" + item.SoLuong + "',  '" + item.DonGia + "' )";
                 Layer01.ExecuteNonQuery(cmdText1);
-                string cmdText2 = "	UPDATE dbo.Hanghoa SET Soluong = Soluong+" + int.Parse(item.SoLuong) + " WHERE MaHH = '" + item.MaHH + "'";
+                string cmdText2 = "	UPDATE dbo.Hanghoa SET Soluong = Soluong+" + int.Parse(item.SoLuong) + ", Giavon = '" + int.Parse(item.DonGia) + "' WHERE MaHH = '" + item.MaHH + "'";
                 Layer01.ExecuteNonQuery(cmdText2);
             }
         }
-        public void ThemMoiHangHoa(string mahh, string tenhh, string dvt, DateTime hansudung, string giavon, string soluong, string maDM, string mota, string maNCC)
+        public void ThemMoiHangHoa(string mahh, string tenhh, string dvt, string hansudung, string giavon, string soluong, string maDM, string mota, string maNCC)
         {
 
             string cmdText = "insert into dbo.HangHoa values('" + mahh + "',N'" + tenhh + "',N'" + dvt + "','" + hansudung + "','" + giavon + "','" + soluong + "','" + maDM + "', N'" + mota + "','" + maNCC + "')";

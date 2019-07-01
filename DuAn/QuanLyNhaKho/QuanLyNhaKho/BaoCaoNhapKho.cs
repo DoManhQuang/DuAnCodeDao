@@ -13,12 +13,17 @@ namespace QuanLyNhaKho
 {
     public partial class BaoCaoNhapKho : Form
     {
+        private NhanVienDAO NVDangNhap = new NhanVienDAO();
         BLLayer02 layer02 = new BLLayer02();
         public BaoCaoNhapKho()
         {
             InitializeComponent();
         }
-
+        public BaoCaoNhapKho(NhanVienDAO nv)
+        {
+            InitializeComponent();
+            NVDangNhap = nv;
+        }
         private void BaoCaoNhapKho_Load(object sender, EventArgs e)
         {
             cboKho.DataSource = layer02.LayDanhSachNhaKhoALL();

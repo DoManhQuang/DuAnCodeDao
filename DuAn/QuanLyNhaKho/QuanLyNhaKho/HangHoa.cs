@@ -140,10 +140,5 @@ namespace QuanLyNhaKho
                 dgvHanghoa.DataSource = layer02.HangHoaSapHetHan();
             }
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

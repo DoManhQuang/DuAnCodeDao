@@ -115,7 +115,7 @@
             // 
             this.btnPhieunhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhieunhap.Image = global::QuanLyNhaKho.Properties.Resources.nhapkho;
-            this.btnPhieunhap.Location = new System.Drawing.Point(3, 52);
+            this.btnPhieunhap.Location = new System.Drawing.Point(6, 52);
             this.btnPhieunhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPhieunhap.Name = "btnPhieunhap";
             this.btnPhieunhap.Size = new System.Drawing.Size(279, 143);

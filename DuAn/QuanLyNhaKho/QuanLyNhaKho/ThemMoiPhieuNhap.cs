@@ -68,7 +68,7 @@ namespace QuanLyNhaKho
 
         private void btnThemMatHang_Click(object sender, EventArgs e)
         {
-
+            
             if (cboTenHangHoa.SelectedItem!=null)
             {
                 int sl;
@@ -86,6 +86,11 @@ namespace QuanLyNhaKho
                 else if (sl <= 0)
                 {
                     MessageBox.Show("Số lượng nhập phải lớn hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtSoLuong.Focus();
+                }
+                else if (sl >= 999000)
+                {
+                    MessageBox.Show("Số lượng nhập quá nhiều kho không đủ chứa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtSoLuong.Focus();
                 }
                 else
@@ -293,7 +298,7 @@ namespace QuanLyNhaKho
                             try
                             {
                                 //txtMaNV.Text
-                                layer02.ThemPhieuNhapHangVaoBangPhieuNhap(txtSoPhieuNhap.Text, NVDangNhap.MaNV, cboKho.SelectedValue.ToString(), dtpNgayNhap.Value, txtNguoiGiaoHang.Text, txtGhiChu.Text, double.Parse(txtTongTien.Text), DanhSachHangHoaNhap);
+                                layer02.ThemPhieuNhapHangVaoBangPhieuNhap(txtSoPhieuNhap.Text, NVDangNhap.MaNV, cboKho.SelectedValue.ToString(), dtpNgayNhap.Value, txtNguoiGiaoHang.Text, txtGhiChu.Text, double.Parse(txtTongTien.Text.Trim()), DanhSachHangHoaNhap);
 
                                 ResetThemMoiPhieuNhap();
 

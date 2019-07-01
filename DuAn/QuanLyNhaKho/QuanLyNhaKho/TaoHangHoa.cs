@@ -29,7 +29,7 @@ namespace QuanLyNhaKho
             {
                 string maDM = cboDanhMuc.SelectedValue.ToString();
                 string NCC = cboNCC.SelectedValue.ToString();
-                layer02.ThemMoiHangHoa(txtMaHH.Text, txtTenHH.Text, txtDVT.Text, dtpHanSuDung.Value, "0", "0", maDM, txtMoTa.Text, NCC);
+                layer02.ThemMoiHangHoa(txtMaHH.Text, txtTenHH.Text, txtDVT.Text, dtpHanSuDung.Value.ToString("yyyy-MM-dd"), "0", "0", maDM, txtMoTa.Text, NCC);
                 MessageBox.Show("Thêm mới thành công 1 hàng hóa.");
                 ResetTaoHangHoaKhiLuuThanhCong();
                 hanghoa.DataSource = layer02.LayDanhSachHangHoa();

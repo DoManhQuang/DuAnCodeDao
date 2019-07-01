@@ -35,6 +35,15 @@
             this.txtTenhang = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvHanghoa = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbDanhmuc = new System.Windows.Forms.ComboBox();
@@ -48,15 +57,6 @@
             this.btnTimkiem = new System.Windows.Forms.Button();
             this.btnTonkho = new System.Windows.Forms.Button();
             this.btnIn = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHanghoa)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -131,6 +131,60 @@
             this.dgvHanghoa.RowTemplate.Height = 24;
             this.dgvHanghoa.Size = new System.Drawing.Size(1800, 690);
             this.dgvHanghoa.TabIndex = 4;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaHH";
+            this.Column1.HeaderText = "Mã Hàng";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TenHH";
+            this.Column2.HeaderText = "Tên Hàng";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Giavon";
+            this.Column3.HeaderText = "Giá Vốn";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Soluong";
+            this.Column4.HeaderText = "Số Lượng";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Dvt";
+            this.Column5.HeaderText = "Đơn vị tính";
+            this.Column5.Name = "Column5";
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "Hansudung";
+            this.Column9.HeaderText = "Hạn Sử Dụng";
+            this.Column9.Name = "Column9";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "TenDM";
+            this.Column6.HeaderText = "Nhóm Hàng";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "TenNK";
+            this.Column7.HeaderText = "Nhà kho";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "Mota";
+            this.Column8.HeaderText = "Mô tả";
+            this.Column8.Name = "Column8";
             // 
             // label6
             // 
@@ -216,7 +270,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1800, 199);
             this.panel1.TabIndex = 9;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnQuaylai
             // 
@@ -314,60 +367,6 @@
             this.btnIn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnIn.UseVisualStyleBackColor = true;
             this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "MaHH";
-            this.Column1.HeaderText = "Mã Hàng";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "TenHH";
-            this.Column2.HeaderText = "Tên Hàng";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Giavon";
-            this.Column3.HeaderText = "Giá Vốn";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Soluong";
-            this.Column4.HeaderText = "Số Lượng";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Dvt";
-            this.Column5.HeaderText = "Đơn vị tính";
-            this.Column5.Name = "Column5";
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "Hansudung";
-            this.Column9.HeaderText = "Hạn Sử Dụng";
-            this.Column9.Name = "Column9";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "TenDM";
-            this.Column6.HeaderText = "Nhóm Hàng";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "TenNK";
-            this.Column7.HeaderText = "Nhà kho";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "Mota";
-            this.Column8.HeaderText = "Mô tả";
-            this.Column8.Name = "Column8";
             // 
             // HangHoa
             // 

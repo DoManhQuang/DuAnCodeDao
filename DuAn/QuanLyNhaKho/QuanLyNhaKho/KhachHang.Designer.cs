@@ -97,11 +97,11 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDanhSachKH.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDanhSachKH.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvDanhSachKH.Location = new System.Drawing.Point(0, 271);
+            this.dgvDanhSachKH.Location = new System.Drawing.Point(0, 460);
             this.dgvDanhSachKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDanhSachKH.Name = "dgvDanhSachKH";
             this.dgvDanhSachKH.RowTemplate.Height = 24;
-            this.dgvDanhSachKH.Size = new System.Drawing.Size(1800, 626);
+            this.dgvDanhSachKH.Size = new System.Drawing.Size(1800, 437);
             this.dgvDanhSachKH.TabIndex = 3;
             this.dgvDanhSachKH.TabStop = false;
             this.dgvDanhSachKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachKH_CellClick);

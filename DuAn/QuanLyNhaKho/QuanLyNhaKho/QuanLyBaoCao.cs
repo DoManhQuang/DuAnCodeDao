@@ -25,7 +25,7 @@ namespace QuanLyNhaKho
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             Hide();
-            QuanLyKhoHang dn = new QuanLyKhoHang();
+            QuanLyKhoHang dn = new QuanLyKhoHang(NVDangNhap);
             dn.ShowDialog();
             this.Close();
         }
@@ -37,19 +37,19 @@ namespace QuanLyNhaKho
 
         private void btnBaoCaoTon_Click(object sender, EventArgs e)
         {
-            BaoCaoNhapXuatTon baocaoton = new BaoCaoNhapXuatTon();
+            BaoCaoNhapXuatTon baocaoton = new BaoCaoNhapXuatTon(NVDangNhap);
             baocaoton.ShowDialog();
         }
 
         private void btnBaoCaoXuat_Click(object sender, EventArgs e)
         {
-            BaoCaoXuatKho xuatkho = new BaoCaoXuatKho();
+            BaoCaoXuatKho xuatkho = new BaoCaoXuatKho(NVDangNhap);
             xuatkho.ShowDialog();
         }
 
         private void btnBaoCaoNhap_Click(object sender, EventArgs e)
         {
-            BaoCaoNhapKho bcnhapkho = new BaoCaoNhapKho();
+            BaoCaoNhapKho bcnhapkho = new BaoCaoNhapKho(NVDangNhap);
             bcnhapkho.ShowDialog();
         }
     }
